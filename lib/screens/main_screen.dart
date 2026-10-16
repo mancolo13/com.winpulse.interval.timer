@@ -32,27 +32,26 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: AppTheme.surfaceColor,
         indicatorColor: AppTheme.primaryColor.withValues(alpha: 0.2),
         destinations: [
-        NavigationDestination(
-          icon: const Icon(Icons.timer_outlined),
-          selectedIcon: const Icon(Icons.timer, color: AppTheme.primaryColor),
-          label: 'Timer',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.fitness_center_outlined),
-          selectedIcon: const Icon(Icons.fitness_center, color: AppTheme.primaryColor),
-          label: 'Circuits',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.tune_outlined),
-          selectedIcon: const Icon(Icons.tune, color: AppTheme.primaryColor),
-          label: 'Presets',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.history_outlined),
-          selectedIcon: const Icon(Icons.history, color: AppTheme.primaryColor),
-          label: 'History',
-        ),
-
+          NavigationDestination(
+            icon: const Icon(Icons.play_circle_outline),
+            selectedIcon: const Icon(Icons.play_circle_fill, color: AppTheme.primaryColor),
+            label: 'Timer',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.fitness_center_outlined),
+            selectedIcon: const Icon(Icons.fitness_center, color: AppTheme.primaryColor),
+            label: 'Routines',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.volume_up_outlined),
+            selectedIcon: const Icon(Icons.volume_up, color: AppTheme.primaryColor),
+            label: 'Audio',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.bar_chart_outlined),
+            selectedIcon: const Icon(Icons.bar_chart, color: AppTheme.primaryColor),
+            label: 'Records',
+          ),
         ],
       ),
     );
